@@ -17,7 +17,7 @@ struct ListaPlantas: View {
                     Text(planta.nome)
                         .foregroundStyle(planta.estaRegado ? .blue : .black)
     
-                    
+                    Text("Oi")
                     Button{
                         var indice = viewModel.listaPlantas.firstIndex(where: {$0.id == planta.id})
                         viewModel.listaPlantas[indice!].estaRegado.toggle()
